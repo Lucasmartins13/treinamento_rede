@@ -11,11 +11,15 @@ Este projeto utiliza visão computacional para detectar e rastrear keypoints em 
 . Geração de um vídeo de saída com os keypoints e conexões destacadas.
 
 ## Tecnologias Utilizadas
-Python
-OpenCV
-YOLOv8 (Ultralytics)
-Roboflow (para anotação e gerenciamento de dataset)
-Kaggle (para treinamento do modelo)
+. Python
+
+. OpenCV
+
+. YOLOv8 (Ultralytics)
+
+. Roboflow (para anotação e gerenciamento de dataset)
+
+. Kaggle (para treinamento do modelo)
 ## Como Usar
 1. Clonar o repositório
 git clone <URL_DO_REPO>
