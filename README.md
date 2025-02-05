@@ -47,29 +47,47 @@ Se o modelo detectar corretamente os keypoints, a saída do vídeo mostrará:
 
 . Um vídeo de saída salvo na pasta videos/output.mp4.
 ## Estrutura do Código
-|-- dataset/                # Dataset gerado pelo Roboflow
+### O código é dividido nas seguintes partes:
 
-|-- models/                 # Modelos treinados
+### 1. Importação de bibliotecas
 
-|   |-- best.pt             # Modelo treinado
+. Importa OpenCV, NumPy e a biblioteca Ultralytics para o YOLOv8.
 
-|-- videos/                 # Vídeos de entrada e saída
+### 2. Definição de funções
 
-|   |-- cut_vid.mp4         # Vídeo de entrada
+. calcular_distancia(p1, p2): Calcula a distância entre dois pontos no plano.
 
-|   |-- output.mp4          # Vídeo com tracking e conexões
+### 3. Carregamento do modelo YOLOv8
 
-|-- main.py                 # Código principal de inferência
+. O modelo best (3).pt é carregado para detecção.
 
+### 4.Inicialização do processamento de vídeo
 
-|-- README.md               # Documentação do projeto
+. O vídeo cut_vid.mp4 é aberto com OpenCV.
+
+. As configurações de tamanho do frame e saída (output.mp4) são definidas.
+
+### 5. Loop principal (processamento frame a frame)
+
+. Lê e redimensiona cada frame.
+
+. Faz inferência com YOLOv8.
+
+. Extrai keypoints do gancho e do caminhão.
+
+. Conecta os pontos detectados e calcula as distâncias.
+
+. Exibe e salva o frame processado.
+
+### 6. Finalização
+
+. Libera os recursos de vídeo e fecha as janelas.
 ## Controles
-O programa exibe o vídeo processado em tempo real.
-Para encerrar a execução, pressione q no teclado.
-O vídeo processado será salvo automaticamente na pasta videos/output.mp4.
-## Requisitos do Sistema
-Python 3.8 ou superior
-GPU NVIDIA compatível com CUDA (opcional, mas recomendado para melhor desempenho)
-Dependências listadas no arquivo requirements.txt
+. O programa exibe o vídeo processado em tempo real.
+
+. Para encerrar a execução, pressione q no teclado.
+
+. O vídeo processado será salvo automaticamente na pasta videos/output.mp4.
+
 ## Autor
-Projeto desenvolvido por Lucas Martins.
+. Projeto desenvolvido por Lucas Martins.
