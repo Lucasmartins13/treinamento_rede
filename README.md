@@ -21,17 +21,21 @@ Este projeto utiliza visão computacional para detectar e rastrear keypoints em 
 
 . Kaggle (para treinamento do modelo)
 ## Como Usar
-1. Clonar o repositório
-git clone <URL_DO_REPO>
-cd <NOME_DO_REPO>
-2. Instalar dependências
-Crie um ambiente virtual (opcional) e instale as dependências:
-pip install -r requirements.txt
-3. Baixar o modelo treinado
-Coloque o arquivo best.pt na pasta models/.
-4. Executar o código
-Execute o script principal para processar o vídeo:
-python main.py
+### Primeiramente, certifique-se de ter instalado:
+. Python 3.8+
+
+. OpenCV
+
+. NumPy
+
+. Ultralytics YOLOv8
+### Preparação:
+. Tenha o modelo YOLOv8 treinado salvo como best (3).pt.
+
+. Coloque o vídeo a ser processado na mesma pasta do código e nomeie-o como cut_vid.mp4.
+
+## Rode o script Python main.py normalmente.
+
 ## Saída do Programa
 Se o modelo detectar corretamente os keypoints, a saída do vídeo mostrará:
 Os pontos detectados no gancho e no caminhão.
