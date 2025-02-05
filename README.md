@@ -4,9 +4,12 @@ Este projeto utiliza visão computacional para detectar e rastrear keypoints em 
 ## Funcionalidades
 Detecção de keypoints em um vídeo.
 
-. Conexão automática dos keypoints esquerdos e direitos entre os objetos detectados.
+ Conexão automática dos keypoints esquerdos e direitos entre os objetos detectados.
+ 
 Cálculo da distância entre os pontos conectados.
+
 Geração de um vídeo de saída com os keypoints e conexões destacadas.
+
 ## Tecnologias Utilizadas
 Python
 OpenCV
