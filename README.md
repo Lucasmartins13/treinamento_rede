@@ -38,19 +38,30 @@ Este projeto utiliza visão computacional para detectar e rastrear keypoints em 
 
 ## Saída do Programa
 Se o modelo detectar corretamente os keypoints, a saída do vídeo mostrará:
-Os pontos detectados no gancho e no caminhão.
-As conexões entre os pontos esquerdos e direitos destacadas em amarelo.
-A exibição das distâncias calculadas entre os pontos conectados.
-Um vídeo de saída salvo na pasta videos/output.mp4.
+
+. Os pontos detectados no gancho e no caminhão.
+
+. As conexões entre os pontos esquerdos e direitos destacadas em amarelo.
+
+. A exibição das distâncias calculadas entre os pontos conectados.
+
+. Um vídeo de saída salvo na pasta videos/output.mp4.
 ## Estrutura do Código
 |-- dataset/                # Dataset gerado pelo Roboflow
+
 |-- models/                 # Modelos treinados
+
 |   |-- best.pt             # Modelo treinado
+
 |-- videos/                 # Vídeos de entrada e saída
+
 |   |-- cut_vid.mp4         # Vídeo de entrada
+
 |   |-- output.mp4          # Vídeo com tracking e conexões
+
 |-- main.py                 # Código principal de inferência
-|-- requirements.txt        # Dependências do projeto
+
+
 |-- README.md               # Documentação do projeto
 ## Controles
 O programa exibe o vídeo processado em tempo real.
