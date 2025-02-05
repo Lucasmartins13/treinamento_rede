@@ -1,5 +1,5 @@
 # Projeto de Tracking de Keypoints com YOLOv8
-Descrição
+## Descrição
 Este projeto utiliza visão computacional para detectar e rastrear keypoints em um vídeo. O objetivo é identificar pontos-chave em um gancho e em um caminhão, conectando corretamente os pontos correspondentes entre os dois objetos. Para isso, foi utilizado o modelo YOLOv8 treinado com keypoints no Kaggle e inferência feita em Python usando OpenCV.
 Funcionalidades
 Detecção de keypoints em um vídeo.
